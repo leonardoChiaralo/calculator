@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora Básica</h1>
+    </header>
+
+    <section>
+      <div class="boxes">
+        <h2>Digite dois números:</h2>
+
+        <input type="number" id="number1" placeholder="Primeiro n°" />
+        <input type="number" id="number2" placeholder="Segundo n°" />
+      </div>
+
+      <div class="boxes">
+        <h2>Escolha a operação:</h2>
+
+        <input type="button" value="Somar" onclick="somar()" />
+        <input type="button" value="Subtrair" onclick="subtrair()" />
+        <input type="button" value="Multiplicar" onclick="multiplicar()" />
+        <input type="button" value="Dividir" onclick="dividir()" />
+      </div>
+
+      <div id="show" class="boxes">
+        <p>Resultado</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
